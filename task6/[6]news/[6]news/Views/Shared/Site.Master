@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+
+<head id="Head1" runat="server">
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="style1">
+
+        <div id="header">
+             <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+        </div>
+
+        <div id="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+    </div>
+</body>

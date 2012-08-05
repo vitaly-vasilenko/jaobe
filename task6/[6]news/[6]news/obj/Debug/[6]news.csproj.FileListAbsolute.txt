@@ -1,0 +1,5 @@
+C:\News_site\[6]news\[6]news\bin\[6]news.dll
+C:\News_site\[6]news\[6]news\bin\[6]news.pdb
+C:\News_site\[6]news\[6]news\obj\Debug\ResolveAssemblyReference.cache
+C:\News_site\[6]news\[6]news\obj\Debug\[6]news.dll
+C:\News_site\[6]news\[6]news\obj\Debug\[6]news.pdb
