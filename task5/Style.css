@@ -1,0 +1,24 @@
+@charset "windows-1251";
+
+body 
+{
+	background-color:#FFFFFF
+}
+p 
+{	
+	color:#222255
+}
+.forexample 
+{
+	color:Orange
+}
+#ident 
+{
+	color:#000000;
+}
+.example2
+{
+	color:#FF0000;
+	font: italic 20px Arial;
+	font-weight:bold;
+}
