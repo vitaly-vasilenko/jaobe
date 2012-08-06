@@ -1,0 +1,16 @@
+button {
+ font: 12pt Rockwell;
+ background: red;
+ color: white;
+ height: 28px; 
+ width: 112px;
+ -webkit-transition: All 0.4s ease; 
+ -moz-transition: All 0.4s ease; 
+ -o-transition: All 0.4s ease;
+ -ms-transition: All 0.4s ease;
+}
+
+button:hover {
+ height: 35px; 
+ width: 140px;
+}
