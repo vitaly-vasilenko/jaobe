@@ -1,5 +1,0 @@
-c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12\bin\Proj12.dll
-c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12\bin\Proj12.pdb
-c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12\obj\Debug\ResolveAssemblyReference.cache
-c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12\obj\Debug\Proj12.dll
-c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12\obj\Debug\Proj12.pdb
