@@ -1,4 +1,11 @@
-﻿#left 
+﻿.pages
+{
+    background:#444;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#leftpost 
 { /* Навигация по сайту */
     width: 300px; /* Ширина меню */
     border: solid 1px black; /* Параметры рамки */
@@ -6,7 +13,7 @@
     padding: 3px; /* Поля вокруг текста */
  }
 
-#right 
+#rightpost 
 { 
     width: 200px; /* Ширина меню */
     border: solid 1px black; /* Параметры рамки */
@@ -14,21 +21,38 @@
     padding: 3px; /* Поля вокруг текста */
 }
 
-#rightpost
+#wrapper {
+  width: 100%;
+  width: expression((documentElement.clientWidth||document.body.clientWidth)<995?'1000px':'');
+  min-width: 900px;
+}
+#container {width: 100%;}
+#content {
+  width: 100%;
+  float: left;
+}
+#text {margin: 0 250px;}
+
+#left 
 {
-    width: 400px; /* Ширина меню */
-    border: solid 1px black; /* Параметры рамки */
-    float: right; /* Состыковка с другим слоем по горизонтали */
-    padding: 3px; /* Поля вокруг текста */
+  font-style: italic;
+  float: left;
+  width: 250px;
+  margin-left: -100%;
+}
+#right 
+{
+  float: left;
+  width: 200px;
+  margin-left: -200px;
 }
 
-#leftpost
-{ 
-    width: 750px; /* Ширина меню */
-    border: solid 1px black; /* Параметры рамки */
-    float: left; /* Состыковка с другим слоем по горизонтали */
-    padding: 3px; /* Поля вокруг текста */
-}
+#header {height: 80px;  background:#20B2AA; text-align: center;}
+#text {background: #D5FFD5;}
+#left {background: #FFF2BF;}
+#right {background: #BFF2FF;}
+#footer {height: 100px; background: #333;}
+
 
 .button_blue, .button_gray { text-align: center; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; display: inline-block; *display: inline; zoom: 1; line-height: 16px;}  
 .button_blue input, .button_gray input { border:1px solid; background: none; font-size: 11px; margin: 0px; cursor: pointer; white-space: nowrap; outline: none; padding: 4px 14px 4px; *padding: 5px 14px 3px; font-family: tahoma, verdana, arial, sans-serif, Lucida Sans; overflow: visible;}  
