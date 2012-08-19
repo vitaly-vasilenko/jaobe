@@ -36,7 +36,9 @@
 		</div>
 
     <div id="right">
-        <a href="../User/User">Владимир Поповкин</a>
+        <a href="../User/User">Редактировать профайл</a>
+        Владимир Поповкин <br />
+        Личные сообщения 0/0<br />
 		</div>
 
     <div class="clear"></div>

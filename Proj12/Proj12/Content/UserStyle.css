@@ -1,11 +1,4 @@
-﻿.pages
-{
-    background:#444;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#leftpost 
+﻿#leftpost 
 { /* Навигация по сайту */
     width: 300px; /* Ширина меню */
     border: solid 1px black; /* Параметры рамки */
@@ -47,11 +40,11 @@
   margin-left: -200px;
 }
 
-#header {height: 80px;  background:#20B2AA; text-align: center;}
-#text {background: #D5FFD5;}
-#left {background: #FFF2BF;}
-#right {background: #BFF2FF;}
-#footer {height: 100px; background: #333;}
+#header {height: 80px;  background:#999; text-align: center;}
+#text {background: #F5F5F5;}
+#left {background: #D3D3D3;}
+#right {background: #D3D3D3;}
+#footer {height: 100px; background: #808080;}
 
 
 .button_blue, .button_gray { text-align: center; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; display: inline-block; *display: inline; zoom: 1; line-height: 16px;}  
