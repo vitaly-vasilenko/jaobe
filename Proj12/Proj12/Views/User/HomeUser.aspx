@@ -1,18 +1,23 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Home Page
+	HomeUser
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-        <h2><%: ViewData["Message"] %></h2>
 
-           <div id="wrapper">
+    <h2>HomeUser</h2> (главная для пользователей)
+
+       <div id="wrapper">
+
+  <input type=submit value="добавить анонс" />
 
   <div id="container">
 
     <div id="content">
       <div id="text">
+          <input type=submit value="редактировать" />
+          <input type=submit value="удалить" /><br />
       12.01 19:33<br />
       <a href="../Post/Post"><img src="../../Content/picture--240.jpg" /><br />
       <h3>Пол Маккартни написал письмо в поддержку Pussy Riot</h3></a><br />
@@ -24,7 +29,6 @@
       <div class="button_blue"><a href="../Post/UserPost"><input type=button value="перейти на пост пользователя"/></a>
       
       </div>
-      <a href="../User/HomeUser">перейти на главную для пользователя</a>
       </div>
     </div>
 
@@ -38,10 +42,15 @@
 		</div>
 
     <div id="right">
-        Гость
+        <img src="../../Content/10b002a7e95b026c55b25e3f697eef6d.jpg" alt="avatar" height=80 width=80 /><br />
+        <a href="../User/User">Редактировать профайл</a>
+        Владимир Поповкин <br />
+        Личные сообщения 0/0<br />
+        телефон<br />
 		</div>
 
     <div class="clear"></div>
   </div>
-  </div>
+</div>   
+
 </asp:Content>

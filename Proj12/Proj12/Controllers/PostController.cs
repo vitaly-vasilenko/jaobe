@@ -16,5 +16,9 @@ namespace Proj12.Controllers
             return View();
         }
 
+        public ActionResult UserPost()
+        {
+            return View();
+        }
     }
 }

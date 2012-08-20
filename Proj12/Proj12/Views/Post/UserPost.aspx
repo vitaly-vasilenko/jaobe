@@ -1,20 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Post
+	UserPost
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-(страница для анонимного пользователя)<br />
-
-
-        <h2>Пол Маккартни написал письмо в поддержку Pussy Riot</h2>
-
+(страница для пользователя)
+     <form>
+        <h2>Пол Маккартни написал письмо в поддержку Pussy Riot <input type=submit value="Редактировать" /></h2>
+     </form>
     <div id="wrapper">
       <div id="container">
         <div id="content">
         <div id="text">
-        
+        <form>
+        <input type=submit value="Редактировать" />
         19.01.2012, 19:33<br />
         <img width="340" height="254" src="../../Content/picture--240.jpg" alt="" />
 
@@ -28,12 +28,15 @@
 В поддержку панк-группы выступили многие музыкальные коллективы и исполнители, в том числе Мадонна, Стинг, Red Hot Chili Peppers, Franz Ferdinand, Бьорк, Патти Смит и другие. Группа Anti-Flag, известная своими левыми взглядами, записала кавер на песню "Богородица, Путина прогони". Свой кавер также записала российская группа "Барто" совместно с КаЧем.
 
 Кроме того, Моби выразил сожаление, что в Лос-Анджелесе не состоится акция в поддержку Pussy Riot. 17 августа акции в поддержку группы пройдут в 43 городах мира.</p>
-   <br />
-  <div id="comment">
-       <p>19.02.2012 19:34<br />
+        <br />
+   </form>
+     
+     <div id="comment">
+     <form>
+       <p>19.02.2012 19:43<br />
        <b>Bot1
        Bot1@mail.ru
-       #1</b><br />
+       #1<input type="submit" value="Заблокировать" /></b><br />
        Тело поста состоит из даты, названия и HTML текста поста. Тело
 анонса поста состоит из даты, названия и краткого содержания поста. Форма ввода комментария
 состоит из обязательных полей – поле ввода имени комментатора, email комментатора,
@@ -41,31 +44,24 @@
 навигационная строка для перехода к главной странице и показывающая текущее положение
 пользователя.
        </p>
-
-       <p>19.02.2012 19:34<br />
+     </form>
+     <form>
+       <p>19.02.2012 19:44<br />
        <b>Bot2
-       Bot2@mail.ru
-       #2</b><br />
+       Bot2@mail.ru 
+       #2<input type="submit" value="Заблокировать" /></b><br />
        Эта
 страница содержит те же части, что и главная, но в центральной части располагается тело поста, а
-под ним форма ввода комментария.</p>
-       <br />
+под ним форма ввода комментария.
+       </p>
+     </form>
    </div>
-   
-     <form> 
-           <p><b>Ваше имя:</b><br>
-           <input name="nick" type="text" size="40">
-          </p>
-
-           <p><b>Ваш Email:</b><br>
-           <input name="email" type="text" size="40">
-           </p>
-
-           <p><b>Комментарий</b><br />
-           <textarea name="comment" cols="40" rows="3"></textarea>
-           </p>
-           <input type=submit value"Отправить" />
-      </form>
+   <form>
+       <p><b>Комментарий</b><br />
+               <textarea name="comment" cols="40" rows="3"></textarea>
+               </p>
+               <input type=submit value"Отправить" />
+   </form>
     </div>
 </div>
 <div id="left">Глава Роскосмоса подтвердил брак при производстве блока "Бриз-М"<br /><br />
@@ -74,11 +70,17 @@
 <a href="../Post/Post">Пол Маккартни написал письмо в поддержку Pussy Riot</a><br /><br />
 Пол Маккартни написал письмо в поддержку арестованных участниц группы Pussy Riot. "Я надеюсь, что вы останетесь сильными и уверен, что я, так же как и многие другие люди, которые, как и я, верят в свободу слова, сделают все возможное для того, чтобы поддержать вас и принцип свободы творчества", - говорится в послании. <br /><br />
 </div>
-<div id="right">Гость</div>
-    </div>
+    <div id="right">
+        <img src="../../Content/10b002a7e95b026c55b25e3f697eef6d.jpg" alt="avatar" height=80 width=80 /><br />
+        <a href="../User/User">Редактировать профайл</a>
+        Владимир Поповкин <br />
+        Личные сообщения 0/0<br />
+        телефон<br />
+	</div>
 
 
         <div class=clear ></div>
                
     </div>
+
 </asp:Content>

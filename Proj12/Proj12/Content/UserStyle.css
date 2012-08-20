@@ -30,7 +30,7 @@
 {
   font-style: italic;
   float: left;
-  width: 250px;
+  width: 230px;
   margin-left: -100%;
 }
 #right 
@@ -40,11 +40,19 @@
   margin-left: -200px;
 }
 
+#comment
+{
+    float:left;
+    background: #FFFFFF;
+    width: 450px;
+}
+
 #header {height: 80px;  background:#999; text-align: center;}
 #text {background: #F5F5F5;}
 #left {background: #D3D3D3;}
 #right {background: #D3D3D3;}
-#footer {height: 100px; background: #808080;}
+#footer {height: 80px;  margin-top: 1%; background: #808080;}
+
 
 
 .button_blue, .button_gray { text-align: center; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; display: inline-block; *display: inline; zoom: 1; line-height: 16px;}  

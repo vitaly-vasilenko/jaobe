@@ -76,10 +76,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\10b002a7e95b026c55b25e3f697eef6d.jpg" />
     <Content Include="Content\picture--240.jpg" />
     <Content Include="Content\UserStyle.css" />
     <Content Include="Global.asax" />
     <Content Include="Views\Post\Post.aspx" />
+    <Content Include="Views\Post\UserPost.aspx" />
+    <Content Include="Views\User\HomeUser.aspx" />
     <Content Include="Views\User\User.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

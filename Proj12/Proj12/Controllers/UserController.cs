@@ -17,7 +17,10 @@ namespace Proj12.Controllers
             return View();
         }
 
-
+        public ActionResult HomeUser()
+        {
+            return View();
+        }
 
     }
 }
