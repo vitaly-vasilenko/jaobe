@@ -8,3 +8,8 @@ D:\Proj\trunk\Proj12\Proj12\bin\Proj12.pdb
 D:\Proj\trunk\Proj12\Proj12\obj\Debug\ResolveAssemblyReference.cache
 D:\Proj\trunk\Proj12\Proj12\obj\Debug\Proj12.dll
 D:\Proj\trunk\Proj12\Proj12\obj\Debug\Proj12.pdb
+C:\Users\Nikita\Documents\Visual Studio 2010\Projects\врем\Proj12\Proj12\bin\Proj12.dll
+C:\Users\Nikita\Documents\Visual Studio 2010\Projects\врем\Proj12\Proj12\bin\Proj12.pdb
+C:\Users\Nikita\Documents\Visual Studio 2010\Projects\врем\Proj12\Proj12\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nikita\Documents\Visual Studio 2010\Projects\врем\Proj12\Proj12\obj\Debug\Proj12.dll
+C:\Users\Nikita\Documents\Visual Studio 2010\Projects\врем\Proj12\Proj12\obj\Debug\Proj12.pdb
