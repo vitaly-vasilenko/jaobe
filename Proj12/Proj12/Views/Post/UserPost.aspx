@@ -6,9 +6,9 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 (страница для пользователя)
-     <form>
-        <h2>Пол Маккартни написал письмо в поддержку Pussy Riot <input type=submit value="Редактировать" /></h2>
-     </form>
+
+        <h2>Пол Маккартни написал письмо в поддержку Pussy Riot </h2>
+
     <div id="wrapper">
       <div id="container">
         <div id="content">

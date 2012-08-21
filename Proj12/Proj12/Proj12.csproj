@@ -77,9 +77,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\10b002a7e95b026c55b25e3f697eef6d.jpg" />
+    <Content Include="Content\add_item.gif" />
     <Content Include="Content\picture--240.jpg" />
     <Content Include="Content\UserStyle.css" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Post\NewPost.aspx" />
     <Content Include="Views\Post\Post.aspx" />
     <Content Include="Views\Post\UserPost.aspx" />
     <Content Include="Views\User\HomeUser.aspx" />

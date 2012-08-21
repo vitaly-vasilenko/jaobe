@@ -20,5 +20,10 @@ namespace Proj12.Controllers
         {
             return View();
         }
+
+        public ActionResult NewPost()
+        {
+            return View();
+        }
     }
 }

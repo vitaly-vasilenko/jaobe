@@ -1,34 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	HomeUser
+	NewPost
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <h2>HomeUser</h2> (главная для пользователей)
-    
-    <a href="../Post/NewPost">
-              <img src="../../Content/add_item.gif" alt="добавить пост"/>
-    </a><br />
-       <div id="wrapper">
+    <h2>NewPost</h2>
+
+           <div id="wrapper">
 
   <div id="container">
 
     <div id="content">
       <div id="text">
-          <input type=submit value="редактировать" />
-          <input type=submit value="удалить" />
-          <br />
-      12.01 19:33<br />
-      <a href="../Post/Post"><img src="../../Content/picture--240.jpg" /><br />
-      <h3>Пол Маккартни написал письмо в поддержку Pussy Riot</h3></a><br />
-Пол Маккартни написал письмо в поддержку арестованных участниц группы Pussy Riot. 
-"Я надеюсь, что вы останетесь сильными и уверен, что я, так же как и многие другие люди,
- которые, как и я, верят в свободу слова, сделают все возможное для того, чтобы поддержать 
- вас и принцип свободы творчества", - говорится в послании.
-      <br/>
-      <a href="../Post/UserPost">[перейти на пост пользователя]</a>
+            
+          <b>Заголовок:</b><br/>
+          <input type="text" name="titlePost" size="40" /><br />
+          <b>Пост:</b><br/>
+          <textarea name="post" cols="50" rows="10"></textarea>
+
       </div>
     </div>
 
