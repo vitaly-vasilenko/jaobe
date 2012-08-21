@@ -1,0 +1,54 @@
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\invite.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\invite.pdb
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\obj\Debug\ResolveAssemblyReference.cache
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\obj\Debug\invite.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\obj\Debug\invite.pdb
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\AjaxControlToolkit.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\HtmlAgilityPack.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\SanitizerProviders.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\AjaxControlToolkit.pdb
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\ar\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\cs\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\de\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\es\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\fr\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\he\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\hi\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\it\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\ja\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\ko\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\nl\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\pt\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\ru\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\tr-TR\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\zh-CHS\AjaxControlToolkit.resources.dll
+c:\users\sudo cat\documents\visual studio 2010\Projects\invite\invite\bin\zh-CHT\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\invite.dll
+F:\ProjRText\invite\invite\bin\invite.pdb
+F:\ProjRText\invite\invite\bin\AjaxControlToolkit.dll
+F:\ProjRText\invite\invite\bin\HtmlAgilityPack.dll
+F:\ProjRText\invite\invite\bin\SanitizerProviders.dll
+F:\ProjRText\invite\invite\bin\AjaxControlToolkit.pdb
+F:\ProjRText\invite\invite\bin\ar\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\cs\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\de\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\es\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\fr\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\he\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\hi\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\it\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\ja\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\ko\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\nl\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\pt\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\ru\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\tr-TR\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\zh-CHS\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\bin\zh-CHT\AjaxControlToolkit.resources.dll
+F:\ProjRText\invite\invite\obj\Debug\invite.csprojResolveAssemblyReference.cache
+F:\ProjRText\invite\invite\obj\Debug\invite.dll
+F:\ProjRText\invite\invite\obj\Debug\invite.pdb
+F:\ProjRText\invite\invite\bin\AntiXssLibrary.dll
+F:\ProjRText\invite\invite\bin\HtmlSanitizationLibrary.dll
+F:\ProjRText\invite\invite\bin\AntiXssLibrary.xml
+F:\ProjRText\invite\invite\bin\HtmlSanitizationLibrary.xml
