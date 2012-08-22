@@ -1,0 +1,5 @@
+C:\Users\Шмит\Desktop\Proj11\Proj11\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Шмит\Desktop\Proj11\Proj11\bin\Proj11.dll
+C:\Users\Шмит\Desktop\Proj11\Proj11\bin\Proj11.pdb
+C:\Users\Шмит\Desktop\Proj11\Proj11\obj\Debug\Proj11.dll
+C:\Users\Шмит\Desktop\Proj11\Proj11\obj\Debug\Proj11.pdb
