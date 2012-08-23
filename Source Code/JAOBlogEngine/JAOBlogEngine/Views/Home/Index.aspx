@@ -5,8 +5,24 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: ViewData["Message"] %></h2>
-    <p>
-        To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-    </p>
+    <h2>Главная</h2>
+    
+
+    <div id="container">
+
+        <div id="content">
+                <div id="text">text
+                </div>
+        </div>
+    </div>
+
+    <div id="left">left
+    </div>
+
+    <div id="right">right
+    </div>
+
+
+
+
 </asp:Content>
