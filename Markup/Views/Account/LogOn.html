@@ -9,11 +9,12 @@
 
         <div id="header">
             <div id="title">
-                <h1><a href="../Home/Index.html">Название Блога</a></h1>
+                <h1>Название Блога</h1>
             </div>
               
             <div id="logindisplay">
-                <a href="../Account/LogOn.html">Вход-></a>
+				
+                <div class="button_blue"><input type="button" value="Войти" onclick="location.href='../Account/LogOn.html'" /></div>
             </div> 
             
             <div id="menucontainer">
@@ -27,7 +28,8 @@
 	
 <div id="main">	
 
-    <h2>Log On</h2>
+    <a href="../Home/Index.html">Страница анонсов</a>-><b>Log On</b>
+	<h2></h2>
     <p>
         Please enter your username and password. <a href="../Account/Register.html">Register</a> if you don't have an account.
     </p>
@@ -55,9 +57,9 @@
                     <input type="checkbox">Remember me?
                 </div>
                 
-                <p>
+				<div align="center"> 
                     <div class=button_blue><input type="submit" value="Log On" /></div>
-                </p>
+				</div>
             </fieldset>
         </div>
 

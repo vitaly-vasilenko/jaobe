@@ -10,11 +10,11 @@
 
         <div id="header">
             <div id="title">
-                <h1><a href="../Home/Index.html">Название Блога</a></h1>
+                <h1>Название Блога</h1>
             </div>
               
             <div id="logindisplay">
-                <a href="../Account/LogOn.html">Вход-></a>
+                <div class="button_blue"><input type="button" value="Войти" onclick="location.href='../Account/LogOn.html'" /></div>
             </div> 
             
             <div id="menucontainer">
@@ -27,7 +27,8 @@
         </div>
 		
 	<div id="main">
-    <h2>Новый пост</h2>
+<a href="../Home/Index.html">Страница анонсов</a>-><b>Новый пост</b>
+	<h2></h2>
 
            <div id="wrapper">
 
@@ -37,7 +38,7 @@
       <div id="text">
             
           <b>Заголовок:</b><br/>
-          <input type="text" name="titlePost" size="40" /><br />
+          <textarea name="titlePost" cols="50" rows="1" /></textarea><br />
           <b>Пост:</b><br/>
           <textarea name="post" cols="50" rows="10"></textarea>
 
