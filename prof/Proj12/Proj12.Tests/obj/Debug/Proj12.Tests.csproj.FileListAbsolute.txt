@@ -1,0 +1,8 @@
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\bin\Debug\Proj12.Tests.dll.config
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\bin\Debug\Proj12.Tests.dll
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\bin\Debug\Proj12.Tests.pdb
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\bin\Debug\Proj12.dll
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\bin\Debug\Proj12.pdb
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\obj\Debug\ResolveAssemblyReference.cache
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\obj\Debug\Proj12.Tests.dll
+c:\users\nikita\documents\visual studio 2010\Projects\Proj12\Proj12.Tests\obj\Debug\Proj12.Tests.pdb
