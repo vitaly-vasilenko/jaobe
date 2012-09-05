@@ -270,11 +270,11 @@ GO
 
 
 CREATE TABLE [dbo].[Comment](
-	[ID] [int] NOT NULL,
-	[Text] [nvarchar](max) NOT NULL,
-	[Time] [datetime] NOT NULL,
-	[PostId] [int] NOT NULL,
-	[Visible] [bit] NULL,
+	ID int NOT NULL,
+	[Text] nvarchar(max) NOT NULL,
+	[Time] datetime NOT NULL,
+	PostId int NOT NULL,
+	Visible bit NULL,
  CONSTRAINT [PK_Comment] PRIMARY KEY CLUSTERED 
 (
 	[ID] ASC
@@ -292,6 +292,25 @@ GO
 
 
 
+CREATE TABLE [dbo].[Blog_Options](
+	Id int NOT NULL,
+	Name nvarchar(max) NOT NULL,
+	Comment bit NULL,
+	Logo image NOT NULL,
+	UserId uniqueidentifier NOT NULL,
+ CONSTRAINT [PK_Blog_Options] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 
+GO
+
+ALTER TABLE [dbo].[Blog_Options]  WITH CHECK ADD  CONSTRAINT [FK_Blog_Options_aspnet_Users] FOREIGN KEY([UserId])
+REFERENCES [dbo].[aspnet_Users] ([UserId])
+GO
+
+ALTER TABLE [dbo].[Blog_Options] CHECK CONSTRAINT [FK_Blog_Options_aspnet_Users]
+GO
 
 
