@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 12.25" name="JAOBE">
+  <DataContextMoniker Name="/JAOBEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="91405478-8d9e-43e4-b6f1-1d123210eb36" absoluteBounds="0.75, 7.25, 2, 1.4248478190104175">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_Application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6fc475d-5158-447f-8bf6-f2139141f440" absoluteBounds="0.765, 7.71, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0fa9e11e-8bea-43fb-963b-7a6650ad51f4" absoluteBounds="9.25, 7.125, 2, 4.2187524414062487">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e751a810-aa88-4fd8-9161-16055cf58c76" absoluteBounds="9.265, 7.585, 1.9700000000000002, 3.65875244140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="effe7ec7-e607-4a9e-988c-da9229f916a7" absoluteBounds="3.5, 4, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_Path" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb23d47a-67a2-4f86-be03-ef3e95cb73d3" absoluteBounds="3.515, 4.46, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fff2bbdd-c11f-426c-bcd4-b591c27646eb" absoluteBounds="6.25, 4, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_PersonalizationAllUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b9bdf05-7b11-4f26-8c24-1cc5f68fffd1" absoluteBounds="6.265, 4.46, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f8ee1b7-b402-46bc-a8ca-d64b4f6bf889" absoluteBounds="6.25, 10.375, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_Profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="107fd2f4-2f60-4144-9334-68ab3253313f" absoluteBounds="6.265, 10.835, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68a8c00a-8148-44a5-b0be-38480f8a97e4" absoluteBounds="3.5, 6.125, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2181f6a8-1937-4aae-8d14-bf264b2adbac" absoluteBounds="3.515, 6.585, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c09e030c-b1ac-4924-88b5-a383ef866709" absoluteBounds="6.75, 0.75, 2, 1.2605004882812503">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_SchemaVersion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9c07da1-eabd-40bf-b822-b6ce478604d9" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7cd3ef22-c2e9-468b-b4fa-c19995b48964" absoluteBounds="3.5, 9.25, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="278daa57-d64b-4859-bbd5-d1ff0da73a6c" absoluteBounds="3.515, 9.71, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed1e9a34-dd93-4534-92bc-94861a9d51a4" absoluteBounds="6.25, 8.5, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_UsersInRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2233acc2-b201-4f86-8d67-2f0d1f252144" absoluteBounds="6.265, 8.96, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7274eb3b-a122-4df5-ba01-c9ab6eac9105" absoluteBounds="9.75, 0.75, 2, 3.2326684570312505">
+      <DataClassMoniker Name="/JAOBEDataContext/aspnet_WebEvent_Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ad279c65-4766-472d-829a-1606e445ff74" absoluteBounds="9.765, 1.21, 1.9700000000000002, 2.67266845703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1bf7f2a0-f76b-4a42-b686-744da5554345" absoluteBounds="3.5, 1, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/JAOBEDataContext/Comment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80662fd6-de43-47ac-9780-b16693616a4c" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="419f0d3d-983c-4d51-bce1-ee2a0e6b6473" absoluteBounds="0.75, 0.875, 2, 1.75354248046875">
+      <DataClassMoniker Name="/JAOBEDataContext/Post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06b366e6-a478-4def-9573-e9f3f4f17ff4" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 8.10709757486979); (9.25 : 8.10709757486979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_Application/aspnet_Application_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="91405478-8d9e-43e4-b6f1-1d123210eb36" />
+        <classShapeMoniker Id="0fa9e11e-8bea-43fb-963b-7a6650ad51f4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 7.25); (1.75 : 4.71242390950521); (3.5 : 4.71242390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_Application/aspnet_Application_aspnet_Path" />
+      <nodes>
+        <classShapeMoniker Id="91405478-8d9e-43e4-b6f1-1d123210eb36" />
+        <classShapeMoniker Id="effe7ec7-e607-4a9e-988c-da9229f916a7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.63025024414063); (6.25 : 4.63025024414063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_Path/aspnet_Path_aspnet_PersonalizationAllUser" />
+      <nodes>
+        <classShapeMoniker Id="effe7ec7-e607-4a9e-988c-da9229f916a7" />
+        <classShapeMoniker Id="fff2bbdd-c11f-426c-bcd4-b591c27646eb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.48209757486979); (3.5 : 7.48209757486979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_Application/aspnet_Application_aspnet_Role" />
+      <nodes>
+        <classShapeMoniker Id="91405478-8d9e-43e4-b6f1-1d123210eb36" />
+        <classShapeMoniker Id="68a8c00a-8148-44a5-b0be-38480f8a97e4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.98557657877604); (9.25 : 9.98557657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_User/aspnet_User_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="7cd3ef22-c2e9-468b-b4fa-c19995b48964" />
+        <classShapeMoniker Id="0fa9e11e-8bea-43fb-963b-7a6650ad51f4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.771444905599); (6.25 : 10.771444905599)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_User/aspnet_User_aspnet_Profile" />
+      <nodes>
+        <classShapeMoniker Id="7cd3ef22-c2e9-468b-b4fa-c19995b48964" />
+        <classShapeMoniker Id="8f8ee1b7-b402-46bc-a8ca-d64b4f6bf889" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 8.67484781901042); (1.75 : 10.208944905599); (3.5 : 10.208944905599)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_Application/aspnet_Application_aspnet_User" />
+      <nodes>
+        <classShapeMoniker Id="91405478-8d9e-43e4-b6f1-1d123210eb36" />
+        <classShapeMoniker Id="7cd3ef22-c2e9-468b-b4fa-c19995b48964" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.42307657877604); (6.25 : 9.42307657877604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/aspnet_User/aspnet_User_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="7cd3ef22-c2e9-468b-b4fa-c19995b48964" />
+        <classShapeMoniker Id="ed1e9a34-dd93-4534-92bc-94861a9d51a4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.79459757486979); (3.5 : 1.79459757486979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/JAOBEDataContext/Post/Post_Comment" />
+      <nodes>
+        <classShapeMoniker Id="419f0d3d-983c-4d51-bce1-ee2a0e6b6473" />
+        <classShapeMoniker Id="1bf7f2a0-f76b-4a42-b686-744da5554345" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
