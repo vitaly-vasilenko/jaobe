@@ -5,16 +5,16 @@
 </asp:Content>
 
 <asp:Content ID="loginContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Log On</h2>
+    <a href="../Home/Index">Страница анонсов</a>-><b>Log On</b>
     <p>
-        Please enter your username and password. <%: Html.ActionLink("Register", "Register") %> if you don't have an account.
+        Введите ваш логин и пароль. Пройдите <%: Html.ActionLink("регистацию", "Register") %> если у вас нет аккаутна.
     </p>
 
     <% using (Html.BeginForm()) { %>
         <%: Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.") %>
         <div>
             <fieldset>
-                <legend>Account Information</legend>
+                <legend>Информация аккаунта</legend>
                 
                 <div class="editor-label">
                     <%: Html.LabelFor(m => m.UserName) %>
@@ -26,6 +26,7 @@
                 
                 <div class="editor-label">
                     <%: Html.LabelFor(m => m.Password) %>
+
                 </div>
                 <div class="editor-field">
                     <%: Html.PasswordFor(m => m.Password) %>
@@ -37,9 +38,9 @@
                     <%: Html.LabelFor(m => m.RememberMe) %>
                 </div>
                 
-                <p>
-                    <input type="submit" value="Log On" />
-                </p>
+                <div align="center"> 
+                    <div class=button_blue><input type="submit" value="Log On" /></div>
+				</div>
             </fieldset>
         </div>
     <% } %>

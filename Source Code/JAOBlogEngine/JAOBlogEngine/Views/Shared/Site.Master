@@ -13,12 +13,12 @@
 
         <div id="header">
             <div id="title">
-               <a href="../Home/Index"> <h1>Название блога</h1></a>
+               <h1>Название блога</h1>
             </div>
               
             <div id="logindisplay">
-            <br />
-                <a href="../Account/LogOn"><img src="../../Content/Image/logout.png" width="40px" width="40px" style=" border:0px;"/></a>
+                <div class="button_blue"><input type="button" value="Войти" onclick="location.href='../Account/LogOn'" /></div>
+                
             </div> 
             
             <div id="menucontainer">
@@ -31,9 +31,6 @@
 
         <div id="main">
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-                <div id="wrapper" ></div>
-
-                <div class="clear"></div>
 
                 <div id="footer">
                     © Название блога, 2012. Все права защищены.<br />

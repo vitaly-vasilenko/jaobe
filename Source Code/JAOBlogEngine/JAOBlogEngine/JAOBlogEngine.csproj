@@ -68,6 +68,8 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Controllers\UserOptController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -75,9 +77,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Image\logout.png" />
+    <Content Include="Content\10b002a7e95b026c55b25e3f697eef6d.jpg" />
+    <Content Include="Content\add_item.gif" />
+    <Content Include="Content\del.gif" />
+    <Content Include="Content\Images\lock.png" />
+    <Content Include="Content\Images\picturesmall.jpg" />
+    <Content Include="Content\kedit_6179.png" />
+    <Content Include="Content\picture--240.jpg" />
     <Content Include="Content\UserStyle.css" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Post\NewPost.aspx" />
+    <Content Include="Views\Post\Post.aspx" />
+    <Content Include="Views\Post\UserPost.aspx" />
+    <Content Include="Views\UserOpt\BlogOpt.aspx" />
+    <Content Include="Views\UserOpt\HomeUser.aspx" />
+    <Content Include="Views\UserOpt\UserOpt.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

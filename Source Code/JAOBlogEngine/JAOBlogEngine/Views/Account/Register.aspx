@@ -5,19 +5,19 @@
 </asp:Content>
 
 <asp:Content ID="registerContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2>Create a New Account</h2>
+    <a href="../Home/Index">Страница анонсов</a>-><a href="../Account/LogOn">Log On</a>-><b>Регистрация</b>
     <p>
-        Use the form below to create a new account. 
+        Введите всю необходимую информацию.
     </p>
     <p>
-        Passwords are required to be a minimum of <%: ViewData["PasswordLength"] %> characters in length.
+        
     </p>
 
     <% using (Html.BeginForm()) { %>
         <%: Html.ValidationSummary(true, "Account creation was unsuccessful. Please correct the errors and try again.") %>
         <div>
             <fieldset>
-                <legend>Account Information</legend>
+                <legend>Информация аккаунта</legend>
                 
                 <div class="editor-label">
                     <%: Html.LabelFor(m => m.UserName) %>
@@ -42,18 +42,22 @@
                     <%: Html.PasswordFor(m => m.Password) %>
                     <%: Html.ValidationMessageFor(m => m.Password) %>
                 </div>
-                
+                <div style="font-size:10px;">Длина пароля должна быть не меньше <%: ViewData["PasswordLength"] %> знаков. </div>
+
                 <div class="editor-label">
                     <%: Html.LabelFor(m => m.ConfirmPassword) %>
                 </div>
+
                 <div class="editor-field">
                     <%: Html.PasswordFor(m => m.ConfirmPassword) %>
                     <%: Html.ValidationMessageFor(m => m.ConfirmPassword) %>
                 </div>
                 
-                <p>
-                    <input type="submit" value="Register" />
-                </p>
+                <div align=center>
+                    <div class=button_blue> 
+                        <input type="submit" value="Регистрация" /> 
+                    </div> 
+                </div>
             </fieldset>
         </div>
     <% } %>
