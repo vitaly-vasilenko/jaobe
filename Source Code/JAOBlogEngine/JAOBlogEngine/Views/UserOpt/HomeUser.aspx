@@ -71,13 +71,13 @@
         <p align="center">
 			<img src="../../Content/10b002a7e95b026c55b25e3f697eef6d.jpg" alt="avatar" height=80 width=80 /><br />
 		
-        Владимир Поповкин <br />
+        <div class="field-item"><%: Model.UserName%></div><br />
 		</p>
 		<p>
-		Личный комментарии<br/>
-        555555<br />
-		test@mail.ru<br/>
-		Адрес<br/>
+		<div style="font-weight:bold"><%: Model.Comment%></div><br/>
+        <div style="font-weight:bold"><%: Model.Telephone%></div><br />
+		<div class="field-item"><span class="profile-value"><%: Model.Email%></span></div><br/>
+		<div style="font-weight:bold"><%: Model.Address%></div><br/>
 		</p>
 		
 	</div>

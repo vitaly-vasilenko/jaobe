@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<JAOBlogEngine.Models.ProfileModel>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	UserOpt
@@ -19,36 +19,31 @@
                 <input type=file value="добавить" />
                 <input type=submit value="оправить" />
             </div>изменение Аватара(временно не работает)<br />
-
-			<div class="editor-label">
-                Личный комментарий:<br/>
-				<textarea cols="40" rows="1"></textarea>
-            </div><br/>
+    <% using (Html.BeginForm())
+       { %>
+         <div>
+			<%: Html.LabelFor(model => model.Comment)%>
+            <br />
+            <%: Html.EditorFor(model => model.Comment)%>
+            <br /><br />
+            <textarea cols="40" rows="1"></textarea>
 			
-            <div class="editor-label">
-                Телефон : 
-            </div>            
-            <input type=text value="55555"/>
+            %: Html.LabelFor(model => model.Telephone)%>
+            <br />
+            <%: Html.EditorFor(model => model.Telephone)%>
+            <br /><br />
 
-            <div class="editor-label">
-                Ваш Email
-            </div>
-            <input type="text" value="test@mail.ru" /><br />
+            <%: Html.LabelFor(model => model.Email)%>
+            <br />
+            <%: Html.EditorFor(model => model.Email)%>
+            <br /><br />
             
-			<div class="editor-label">
-                Адрес
-            </div>
+			<%: Html.LabelFor(model => model.Address)%>
+            <br />
+            <%: Html.EditorFor(model => model.Address)%>
+            <br /><br />
 			
-			<input type="text" value="адрес" /><br />
-			
-            <div class="editor-label">
-                Пароль
-            </div>
-		
-
-            <input type=password /><br />
-			введите пароль еще раз<br /> 
-            <input type=password /><br />
+            <p><%: Html.ActionLink("Изменить пароль", "ChangePassword", "Account")%></p>
             
 <br />
 
@@ -58,6 +53,8 @@
                     <input type="submit" value="Сохранить" />
                 </div>
             </div>
+             </div>
+        <% } %>
         </form>
     </fieldset>
 
