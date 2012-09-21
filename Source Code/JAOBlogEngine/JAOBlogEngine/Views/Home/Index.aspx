@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     Home Page
@@ -7,40 +8,54 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     Страница анонсов
         <h1></h1>
-    
-
+  
+<form id="form1" runat="server">    
 <div id="wrapper">
-
   <div id="container">
-
     <div id="content">
       <div id="text">
-      12.01 19:33<br />
-      <a href="../Post/Post"><h3>Пол Маккартни написал письмо в поддержку Pussy Riot</h3>
-      <img src="../../Content/picture--240.jpg" /></a><br />
-	  <p align="justify">
-Пол Маккартни написал письмо в поддержку арестованных участниц группы Pussy Riot. 
-"Я надеюсь, что вы останетесь сильными и уверен, что я, так же как и многие другие люди,
- которые, как и я, верят в свободу слова, сделают все возможное для того, чтобы поддержать 
- вас и принцип свободы творчества", - говорится в послании.
-	  </p>
-	  
-	  12.02 19:39<br />
-	  <h3>Windows 8 обвалила акции Dell</h3>
-	  <img src="../../Content/Images/picturesmall.jpg" width="240px" height="180px"/>
-	  <p align="justify">
-Акции американского производителя компьютеров Dell упали на 6,5 процента в первый час торгов на бирже NASDAQ. Падение связано с тем, что шесть крупных инвесткомпаний снизили ожидания по поводу стоимости бумаг компании. Dell несет потери из-за грядущего выхода ОС Windows 8 и конкуренции с Lenovo и Acer.
-	</p>
-
-      </div>
-     
+      <%
+          JAOBlogEngine.Views.Shared.JAOBEDataContext db = new JAOBlogEngine.Views.Shared.JAOBEDataContext();
+          int PostOnPage = 2; //Добавить в настройки//
+          int CurrentPage;
+          if (Request.QueryString["page"] != null)
+          {  
+              CurrentPage = int.Parse(Request.QueryString["page"]); 
+          }
+          else 
+          { 
+              CurrentPage = 0;
+          }
+          var IdTable = from Announce in db.Posts select Announce.ID;
+          for (int CurrentID = ((CurrentPage * PostOnPage) + 1); (CurrentID <= (CurrentPage * PostOnPage + PostOnPage)) & (CurrentID <= IdTable.Count()); CurrentID++)
+          {
+            form1.FindControl("textDb").Controls.Add(new LiteralControl("<hr>"));
+            form1.FindControl("textDb").Controls.Add(new Label { Text = ((from Announce in db.Posts where Announce.ID==CurrentID select Announce.Time).FirstOrDefault()).ToString()});
+            form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+            form1.FindControl("textDb").Controls.Add(new Image { ImageUrl = "../../Content/picture--240.jpg" });
+            form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+            form1.FindControl("textDb").Controls.Add(new HyperLink {Text=(from Announce in db.Posts where Announce.ID==CurrentID select Announce.Title).FirstOrDefault(),NavigateUrl="~/Post/Post?post=" + Convert.ToString(CurrentID)});
+            form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+            form1.FindControl("textDb").Controls.Add(new Label { Text = (from Announce in db.Posts where Announce.ID == CurrentID select Announce.Announce).FirstOrDefault() });
+          }
+          for (int i = 0; i <= ((int)Math.Ceiling((decimal)IdTable.Count()/PostOnPage)-1); i++)
+          {
+            form1.FindControl("textPg").Controls.Add(new HyperLink { Text = i.ToString() + "   ", NavigateUrl = "~/Home/Index?page=" + i }); 
+          }
+          if (CurrentPage < ((int)Math.Ceiling((decimal)IdTable.Count()/PostOnPage)-1))
+          {
+            form1.FindControl("textPg").Controls.Add(new HyperLink { Text = "   Следующая", NavigateUrl = "~/Home/Index?page=" + (CurrentPage + 1) }); 
+          }   
+        %>   
+        <div id="textDb" runat="server" style="text-align: justify"></div>    
+        </br> 
+        <div id="textPg" runat="server" style="text-align: center"></div>  
+      </div>  
       </div>
     </div>
 
     <div id="left">
         <a href="../Post/NewPost">Новый пост</a><br />
-        <a href="../Post/Post">Пост для гостей</a><br />
-        <a href="../Post/UserPost">Пост для админа</a><br />
         <a href="../UserOpt/HomeUser">Главная для админа</a><br />
         <a href="../UserOpt/UserOpt">Профиль</a><br />
 		<a href="../UserOpt/BlogOpt">Настройки</a></br>
@@ -60,11 +75,8 @@
 		</p>
 		
 	</div>
-<p align="center"><b>1</b> 2 3 4 </p>
+<p align="center">
     <div class="clear"></div>
   </div>
-
-
-
-
+ </form>
 </asp:Content>

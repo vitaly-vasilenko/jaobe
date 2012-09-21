@@ -1,58 +1,67 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+<%@ Import Namespace="System.Data" %>
+<%@ Import Namespace="System.Data.Linq" %>
+<%@ Import Namespace="System.Data.Linq.Mapping" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	HomeUser
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
+<form id="form1" runat="server">
     Страница анонсов
     <h2></h2>
-    
-    
-		
-    
-       <div id="wrapper">
-
-  <div id="container">
-
-    <div id="content">
-      <div id="text">
-		<a href="../Post/NewPost">
-			<div style= "float: right;">
-				<img src="../../Content/add_item.gif" alt="добавить пост" width="16px" height="16px" style="border:0px"/>
-			</div><br/>
-		</a>
-                 12.01 19:33
-
-      <a href="../Post/Post"><h3>Пол Маккартни написал письмо в поддержку Pussy Riot</h3>
-      <img src="../../Content/picture--240.jpg" /></a><br />  
-	  <p align="justify">
-Пол Маккартни написал письмо в поддержку арестованных участниц группы Pussy Riot. 
-"Я надеюсь, что вы останетесь сильными и уверен, что я, так же как и многие другие люди,
- которые, как и я, верят в свободу слова, сделают все возможное для того, чтобы поддержать 
- вас и принцип свободы творчества", - говорится в послании.
-	<input type="image" src="../../Content/del.gif" style="float:right; width:15px; height:16px; border:0px;"/>
-	<input type="image" src="../../Content/kedit_6179.png" style=" float:right; width:15px; height:16px; border:0px;" />
-	  </p>
-	  
-	  
-	  12.02 19:39
-				
-	  <h3>Windows 8 обвалила акции Dell</h3>
-	  <img src="../../Content/Images/picturesmall.jpg" width="240px" height="180px"/>
-	  <p align="justify">
-Акции американского производителя компьютеров Dell упали на 6,5 процента в первый час торгов на бирже NASDAQ. Падение связано с тем, что шесть крупных инвесткомпаний снизили ожидания по поводу стоимости бумаг компании. Dell несет потери из-за грядущего выхода ОС Windows 8 и конкуренции с Lenovo и Acer.
-				<input type="image" src="../../Content/del.gif" style="float:right; width:15px; height:16px; border:0px;"/>
-                <input type="image" src="../../Content/kedit_6179.png" style=" float:right; width:15px; height:16px; border:0px;" />
-	</p>
-      </div>
-    </div>
+    <div id="wrapper">
+        <div id="container">
+            <div id="content">
+                <div id="text">
+                <%
+                    JAOBlogEngine.Views.Shared.JAOBEDataContext db = new JAOBlogEngine.Views.Shared.JAOBEDataContext();
+                    var IdTable = from Announce in db.Posts select Announce.ID;
+                    int PostOnPage = 5; //Добавить в настройки
+                    int CurrentPage;
+                    if (Request.QueryString["page"] != null)
+                    {
+                        CurrentPage = int.Parse(Request.QueryString["page"]);
+                    }
+                    else
+                    {
+                        CurrentPage = 0;
+                    }
+                    form1.FindControl("textDb").Controls.Add(new HyperLink { NavigateUrl = "~/Post/NewPost", ImageUrl ="../../Content/add_item.gif" });
+                    form1.FindControl("textDb").Controls.Add(new LiteralControl("<br><br>"));
+                    for (int CurrentID = ((CurrentPage * PostOnPage) + 1); (CurrentID <= (CurrentPage * PostOnPage + PostOnPage)) & (CurrentID <= IdTable.Count()); CurrentID++)
+                    {
+                      form1.FindControl("textDb").Controls.Add(new LiteralControl("<hr>"));
+                      form1.FindControl("textDb").Controls.Add(new HyperLink { NavigateUrl = "~/Post/EditPost?post=" + Convert.ToString(CurrentID), ImageUrl = "../../Content/kedit_6179.png"});
+                      form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+                      form1.FindControl("textDb").Controls.Add(new Label { Text = ((from Announce in db.Posts where Announce.ID==CurrentID select Announce.Time).FirstOrDefault()).ToString()});
+                      form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+                      form1.FindControl("textDb").Controls.Add(new Image {ImageUrl="../../Content/picture--240.jpg"});
+                      form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+                      form1.FindControl("textDb").Controls.Add(new HyperLink { Text = (from Announce in db.Posts where Announce.ID == CurrentID select Announce.Title).FirstOrDefault(), NavigateUrl = "~/Post/UserPost?post=" + Convert.ToString(CurrentID) });
+                      form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+                      form1.FindControl("textDb").Controls.Add(new Label { Text = (from Announce in db.Posts where Announce.ID == CurrentID select Announce.Announce).FirstOrDefault() });
+                   }
+                      form1.FindControl("textDb").Controls.Add(new LiteralControl("<br>"));
+                      for (int i = 0; i <= ((int)Math.Ceiling((decimal)IdTable.Count()/PostOnPage)-1); i++)
+                        {
+                            form1.FindControl("textPg").Controls.Add(new HyperLink { Text = i.ToString() + "   ", NavigateUrl = "~/UserOpt/HomeUser?page=" + i }); 
+                        }
+                     if (CurrentPage < ((int)Math.Ceiling((decimal)IdTable.Count()/PostOnPage)-1))
+                     {
+                         form1.FindControl("textPg").Controls.Add(new HyperLink { Text = "   Следующая", NavigateUrl = "~/UserOpt/HomeUser?page=" + (CurrentPage + 1) }); 
+                     }   
+                  %>
+                  <div id="textDb" runat="server" style="text-align: justify"/> 
+                  <br>   
+                  </p>  
+                  <div id="textPg" runat="server"  style="text-align: center"/>    
+                </div>
+            </div>
 
     <div id="left">
         <a href="../Post/NewPost">Новый пост</a><br />
-        <a href="../Post/Post">Пост для гостей</a><br />
-        <a href="../Post/UserPost">Пост для админа</a><br />
         <a href="../UserOpt/HomeUser">Главная для админа</a><br />
         <a href="../UserOpt/UserOpt">Профиль</a><br />
 		<a href="../UserOpt/BlogOpt">Настройки</a></br>
@@ -76,5 +85,5 @@
     <div class="clear"></div>
   </div>
 </div>   
-
+</form>
 </asp:Content>
